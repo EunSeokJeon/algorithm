@@ -1,3 +1,4 @@
+//최악의 경우 n^2이 나올 수 있음 
 #include <stdio.h>
 
 int number = 10;
@@ -13,7 +14,7 @@ void quickSort(int *data, int start, int end){
 	int j = end;
 	int temp;
 	while(i<=j){ //엇갈릴 떄까지만 반복
-		 while(data[i] <= data[key]){ //키 값보다  큰 값을 만날 때까지. 왼쪽(j)와 key값을 교체해주기 때문에 (j가 key의 처음인 start보다 작으면 안된다) 
+		 while(data[i] <= data[key] && i<=end){ //키 값보다  큰 값을 만날 때까지. 왼쪽(j)와 key값을 교체해주기 때문에 (j가 key의 처음인 start보다 작으면 안된다) 
 		 	i++;
 		 }
 		 while(data[j] >= data[key] && j>start ){ //키 값보다 작은 값을 만날 때까지 
