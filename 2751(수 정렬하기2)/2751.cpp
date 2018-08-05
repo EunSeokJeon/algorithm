@@ -1,6 +1,6 @@
 #include <stdio.h>
 //퀵 정렬로 하면 틀린다. 
-
+//stl의 sort함수는 퀵정렬을 기반으로 하되, 최악의 경우에도 NlogN이 나오므로 sort 함수를 사용하는게 좋다. 
 int number, data[1000001];
 
 void quickSort(int *data, int start, int end){
