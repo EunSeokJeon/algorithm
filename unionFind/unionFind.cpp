@@ -6,7 +6,7 @@ int getParent(int parent[], int x){
 	return parent[x] = getParent(parent, parent[x]);
 }
 
-//두 부모 노드를 합치는 함수
+//두 부모 노드를 합치는 함수   //Union
 void unionParent(int parent[], int a, int b){
 	a = getParent(parent, a);
 	b = getParent(parent, b);
@@ -14,7 +14,7 @@ void unionParent(int parent[], int a, int b){
 	else parent[a] = b;
 }
 
-// 같은 부모를 가지는지 확인
+// 같은 부모를 가지는지 확인 //Find
 int findParent(int parent[], int a, int b){
 	a = getParent(parent, a);
 	b = getParent(parent, b);
