@@ -23,7 +23,7 @@ void floydWarshall(){
 		}
 	} 
 	
-	//k는 거쳐가는 노드 
+	//k는 거쳐가는 노드 //N의 3제곱 
 	for(int k = 0 ; k<number; k++){
 		//i는 출발노드 
 		for(int i = 0; i< number ; i++){
