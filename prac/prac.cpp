@@ -26,8 +26,12 @@ int main(){
 	//총 감독관과 같은 경우 // result ++;
 	//총 감독관보다 적은 경우 // result ++ ; 
 	for(int i = 0 ; i< N; i++){
-		if((exRoom[i] / b) > 1){
-			result += (exRoom[i]-b)/c +1;
+		if((exRoom[i] / b) >= 1){
+			
+			if( (exRoom[i]-b)%c == 0 )
+				result += (exRoom[i]-b)/c + 1;
+			else
+				result += (exRoom[i]-b)/c + 2;
 		}
 		else{
 			result++;
