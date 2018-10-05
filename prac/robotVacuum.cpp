@@ -21,7 +21,7 @@ int main(){
 			cin >> map[i][j];
 		}
 	}
-	
+	/*
 	if(d == 0){ //북 
 		x = dx[0];
 		y = dy[0];
@@ -42,6 +42,7 @@ int main(){
 		y = dy[3];
 		break;
 	}
+	*/
 	
 	while(){
 		check[r][c]=1;//현재 위치 청소 
