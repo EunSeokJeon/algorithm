@@ -10,6 +10,8 @@ int n;
 string s;
 vector< pair<int,int> > change;
 
+//돌아간 뒤에 체크하는 게 아닌 돌아가기 전에 체크해야 하는 게 포인트
+ 
 void turn(int dir, int* arr){
 	int temp = 0;
     switch (dir) {
